@@ -5,6 +5,7 @@ const quoteAuthor=document.getElementById("quote-author");
 const twitterButton=document.getElementById("twitter");
 const whatsappButton=document.getElementById("whatsapp");
 const newquoteButton=document.getElementById("new quote");
+const instagramButton=document.getElementById("instagram");
 const loader=document.getElementById("loader");
 
 function loading(){
@@ -44,7 +45,12 @@ function tweetQuote(){
     const tweetURL =`https://twitter.com/intent/tweet?text=${quoteContent.innerText}%0a-${quoteAuthor.innerText}`;
     window.open(tweetURL,'_blank');
 }
-
+function postQuote(){
+    const postURL =`https://ig.me/send?text=${quoteContent.innerText}%0a-${quoteAuthor.innerText}`;
+    window.open(postURL,'_blank');
+    //https://applink.instagram.com
+    
+}
 
 
 
@@ -66,7 +72,7 @@ function shareQuote(){
 newquoteButton.addEventListener("click",getQUOTE);
 twitterButton.addEventListener("click",tweetQuote);
 whatsappButton.addEventListener("click",shareQuote);
-
+instagramButton.addEventListener("click",postQuote);
 
 
 getQUOTE();

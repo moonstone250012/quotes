@@ -12,7 +12,7 @@ body{
     font-family: El+Messiri, sans-serif;
     font-size: 3rem;
     color: white;
-    font-weight: 600;
+    font-weight: 900;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -89,6 +89,12 @@ button:active{
 
 .twitter-button:hover{
     color:#38a1f3;
+}
+.instagram-button:hover{
+    color:#f01ab0;
+}
+.instagram-button{
+    font-size: 1.5rem;
 }
 
 .loader{
